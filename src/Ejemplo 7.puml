@@ -1,0 +1,30 @@
+@startuml
+
+left to right direction
+
+:Empleado: as e
+:Administrador: as a
+
+rectangle "Empresa Pedidos"{
+(Introducir pedido) as UC1
+(Cancelar pedido) as UC2
+(Obtener estado pedido) as UC3
+(Borrar pedido) as UC4
+(Buscar pedidos) as UC5
+(Alta cliente) as UC6
+(Buscar cliente) as UC7
+(Nuevo producto) as UC8
+(Borrar producto) as UC9
+}
+
+e -- UC1
+e -- UC2
+e -- UC3
+e -- UC4
+e -- UC5
+e -- UC6
+e -- UC7
+
+a -- UC8
+a -- UC9
+@enduml
