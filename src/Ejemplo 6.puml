@@ -1,0 +1,11 @@
+@startuml
+
+left to right direction
+
+:Cliente bancario: as cb
+:Cliente corporativo: as cc
+:Cliente normal: as cn
+
+cb <|-- cc
+cb <|-- cn
+@enduml
