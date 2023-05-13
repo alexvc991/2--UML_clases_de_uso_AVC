@@ -1,0 +1,22 @@
+@startuml
+
+left to right direction
+
+:Socio: as a
+:Bibliotecario: as b
+
+rectangle Biblioteca{
+(Reservar libro) as UC1
+(Prestar libro) as UC2
+(Devolver libro) as UC3
+(Actualizar catalogo) as UC4
+}
+
+a -- UC1
+a -- UC2
+a -- UC3
+
+b -- UC2
+b -- UC4
+
+@enduml
