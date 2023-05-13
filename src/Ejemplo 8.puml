@@ -1,0 +1,29 @@
+@startuml
+
+left to right direction
+
+:Empleado: as e
+
+(Alta cliente) as UC1
+(Introducir pedido) as UC2
+(Obtener estado pedido) as UC3
+(Cancelar pedido) as UC4
+(Buscar cliente) as UC5
+(Pago en cuenta) as UC6
+(Buscar pedido) as UC7
+(Pago con tarjeta) as UC8
+
+e -- UC1
+e -- UC2
+e -- UC3
+e -- UC7
+e -- UC4
+
+UC1 ..> UC2 : extiende
+UC2 ..> UC5 : incluye
+UC2 <.. UC8 : extiende
+UC2 <.. UC6 : extiende
+UC3 ..> UC7 : incluye
+UC4 ..> UC7 : incluye
+
+@enduml
