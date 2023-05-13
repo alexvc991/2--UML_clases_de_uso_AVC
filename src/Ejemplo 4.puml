@@ -1,0 +1,13 @@
+@startuml
+
+left to right direction
+
+:Agente: as a
+
+(Evaluar solicitud de credito) as UC1
+(Solicitar informacion adicional al cliente) as UC2
+
+a --> UC1
+UC1 <.. UC2 : <<extend>>
+
+@enduml
