@@ -1,0 +1,14 @@
+@startuml
+
+left to right direction
+
+:Agente: as a
+
+(Enviar solicitud de credito) as UC1
+(Enviar solicitud de credito personal) as UC2
+(Enviar solicitud de credito empresarial) as UC3
+
+a --> UC1
+UC2 -|> UC1
+UC3 -|> UC1
+@enduml
